@@ -34,5 +34,11 @@ module.exports = {
         message: 'Method not allowed',
         displayText: 'Method not allowed',
         errorType: 'B'
-    }
+    },
+    '006': {
+        code: '006',
+        message: 'Unexpected Error',
+        displayText: 'Something went wrong',
+        errorType: 'T'
+    },
 }

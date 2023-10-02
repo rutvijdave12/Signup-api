@@ -6,6 +6,8 @@ const {infoLogger} = require('../../logger/logger')
 module.exports = function(req, res, next) {
     const schema = Joi.object({
         requestId: Joi.string().required(),
+        firstName: Joi.string().required(),
+        lastName: Joi.string().required(),
         email: Joi.string().email().required(),
         password: Joi.string().required()
     });
