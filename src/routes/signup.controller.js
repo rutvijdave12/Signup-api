@@ -7,7 +7,7 @@ router.post('/signup', require('../validators/signup.validator.js'), require('./
 router.all('*', (req, res, next) => {
     return res.status(405).json({
         statusCode: 1,
-        timestamp: Date.now,
+        timestamp: Date.now(),
         requestId: req.body.requestId || v4(),
         info: {
             code: errors['005'].code,

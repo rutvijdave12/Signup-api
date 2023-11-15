@@ -11,5 +11,5 @@ module.exports = {
     port: process.env.APP_PORT,
     logLevel: process.env.LOG_LEVEL,
     dbConnectionString: process.env.DB_CONNECTION_STRING,
-    dbSslCertPath: process.env.SSL_CERT_PATH
+    dbSslCertPath: path.join(__dirname, process.env.SSL_CERT_PATH)
 }

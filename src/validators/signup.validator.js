@@ -20,7 +20,7 @@ module.exports = function(req, res, next) {
         const message = error.details[0].message
         return res.status(400).json({
             statusCode: 1,
-            timestamp: Date.now,
+            timestamp: Date.now(),
             requestId: req.body.requestId || req.custom.id,
             info: {
                 code: errors['004'].code,
